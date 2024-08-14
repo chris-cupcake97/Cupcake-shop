@@ -1,0 +1,448 @@
+/* Navihation Bar*/
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#menu{
+	
+	height:50px;
+}
+
+nav ul {
+    background-color: hotpink;
+}
+
+nav ul li {
+    padding: 10px 30px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+	
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+	font-size: 20px;
+}
+
+nav ul li ul {
+	padding:25px 0px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    width: 100%;
+    border-top: 3px solid #fff;
+    transition: 0.4s ease-in-out;
+}
+
+nav > ul > li > ul {
+    left: 0;
+    top: 80%;
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav2{
+	padding-left: 1000px;
+	background-color:black;
+	position: relative;
+}
+
+#menuu{
+ 	background-color:white;
+	
+}
+
+.nav2 ul li a {
+	font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase;	
+}
+
+.logo {
+    font-family:actor;/*Company Logo*/
+    font-size: 35px;
+    text-decoration: none;
+    color: #C12267;
+    font-weight: bolder;
+}
+
+/* End of Navigation Bar Style*/
+
+
+
+
+
+/* Footer DesignS*/
+
+.footer{
+   background: #222222;
+   padding: 50px;
+}
+
+.footer .footer_menu{
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.footer .footer_menu .title{
+  margin-bottom: 10px;
+  color: #adadad;
+  font-size: 20px;
+}
+
+.footer .footer_menu ul li a{
+  display: block;
+  margin-bottom: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-size: 18px;
+}
+
+.footer .footer_menu ul li a:hover{
+	color: hotpink;
+}
+
+/* End of Footer Code */
+
+
+/* Newsletter Form */
+.newsform form {
+ 	padding:50px;
+	width: 75%;
+	margin:100px auto;
+	background: #E4E4E4;
+}
+
+.newletterlabel {
+  display:block;
+  text-align:center;
+  font-size:25px;
+  font-weight:700;
+  margin-bottom:30px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="email"] {
+  display:block;
+  width:40%;
+  font-size:18px;
+  margin:0 auto 20px auto;
+  
+  padding:20px;
+  color:#4d4d4d;
+  
+  text-align:center;
+  
+}
+input[type="email"]:focus {
+  outline:none;
+  background-position:0 0;
+ }
+input[type="submit"] {
+  display:block;
+  width:30%;
+  margin:0 auto;
+  padding:20px;
+  border:none;
+  outline:none;
+  font-size:18px;
+  color:#fff;
+  transition:all .3s ease;
+  box-shadow:4px 6px 10px -4px rgba(0,0,0,0.3), 0 1px 1px -1px rgba(255,255,255,0.3);
+  cursor:pointer;
+  transition:all .6s ease;
+}
+/* End Newsletter Form */
+
+
+/* index page product */
+
+
+.container1{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	border-radius: 10px;
+	/*box-shadow: 2px 10px 12px rgba(0,0,0,0.5);*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 20px 10px;
+}
+
+/*.box:hover {
+  transform: scale(1.1); 
+}*/
+
+.details{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+}
+
+
+.product{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.producttext {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/* Gallery */
+
+.rowGal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnGal {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columnGal img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (120% zoom) */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnGal {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnGal {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Ending of Gallery Style*/
+
+
+/* Code for Contact Page*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #00cec9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #880741;
+ }
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* End of Contact Page Code*/
+
+
+/* FAQ Section Styling */
+.box1{
+   width: 750px;
+   margin: 50px auto;
+   background: #fff;
+   border-radius: 7px;
+   box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+
+.box1 .heading{
+   background: hotpink ;
+   border-radius: 7px 7px 0px 0px;
+   padding: 20px;
+   color: black;
+   text-align: center;
+   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 28px;
+}
+
+.faqs{
+   padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker{
+   float: right;
+   margin-top: 3px;
+}
+
+details{
+   background: #f6f6f6;
+   padding: 10px 20px;
+   border-radius: 7px;
+   margin-top: 30px;
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   font-size: 18px;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+details summary{
+   outline: none;
+}
+
+/* End of FAQ*/
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonNew {
+  background-color: #B3105A; 
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.about {
+  margin-right: 140px;
+  margin-left: 125px;
+  background: #FFFFFF;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+/* Product Card*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > card {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > card img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid .text h3 {
+  font-size: 1.4rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+.grid .text p {
+  font-size: 0.9rem;
+}
+
+.grid .text p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+  font-family: 'Courgette', cursive;
+}
+ 	
